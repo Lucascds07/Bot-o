@@ -3,13 +3,16 @@
     <head>
         <title>contador eficiente</title>
         <style>
+            button {
+               height: 100px;
+            }
            h1{
                 color: red;
             }
         </style>
     </head>
     <body>
-        <h1 (aaa)>Contadores</h1>
+        <h1 >Contadores</h1>
         <button onclick="adicionar()"></button>
     <script>
         var numero = 0;
@@ -20,7 +23,7 @@
     }
 
         function render() {
-        document.querySelector("button").innerText = numero;
+        document.querySelector("button").innerText = "total" + numero;
     }
     
      render();
