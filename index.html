@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contador eficiente</title>
+        <style>
+            button {
+                width: 300px;
+                height: 200px;
+                font-size: large;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="adicionar"></button>
+    <script>
+        var numero = 0;
+
+        function adicionar() {
+        numero++;
+        render();
+    }
+
+        function render() {
+        document.querySelector("button").innerText = numero;
+    }
+    
+     render();
+    </script>
+    </body>
+</html>
